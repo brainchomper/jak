@@ -9,14 +9,12 @@ this.getData = function()	{
 	});
 	};
 
-
 this.newUserSearch = function (name, location) {
 	var newSearch = new UserSearch(name, location)
 	var logText =
 		"\nName: " + newSearch.name +
 		"Location: " + newSearch.location +
 		" Date: " + moment(newSearch.date).format("MM-DD-YYYY");
-
 
 	fs.appendFile("log.txt", logText, function (err) {
 		if (err) throw err;
