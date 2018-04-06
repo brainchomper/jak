@@ -11,3 +11,5 @@ var UserSearch = function (name, location) {
 		});
 	};
 };
+
+module.exports = UserSearch;
