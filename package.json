@@ -1,0 +1,24 @@
+{
+  "name": "jak",
+  "version": "1.0.0",
+  "description": "11.3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brainchomper/jak.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brainchomper/jak/issues"
+  },
+  "homepage": "https://github.com/brainchomper/jak#readme",
+  "dependencies": {
+    "moment": "^2.22.0",
+    "weather-js": "^2.0.0"
+  }
+}
