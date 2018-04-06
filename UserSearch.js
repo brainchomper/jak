@@ -1,6 +1,4 @@
 var weather = require('weather-js');
-var moment = require('moment');
-var now = moment();
 
 var UserSearch = function (name, location) {
 	this.name = name;
@@ -9,9 +7,11 @@ var UserSearch = function (name, location) {
 
 	this.getWeather = function () {
 		weather.find({ search: this.location, degreeType: 'F' }, function (err, result) {
-			if (err) console.log(err);
-
-			console.log(JSON.stringify(result, null, 2));
+			if (err) {
+			return console.log(err);
+			}
+			console.log(result);
+			// console.log(JSON.stringify(result, null, 2));
 		});
 	};
 };
